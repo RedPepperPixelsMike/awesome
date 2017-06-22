@@ -32,6 +32,7 @@ export class SignupComponent implements OnInit {
             this.myForm.value.password,
             this.myForm.value.firstName,
             this.myForm.value.lastName
+
         );
         this.authService.signup(user).subscribe(
             data => console.log(data),
