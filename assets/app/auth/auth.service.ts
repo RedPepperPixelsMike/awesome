@@ -19,7 +19,7 @@ export class AuthService {
         const headers = new Headers({
             'Content-Type': 'application/json'
         })
-        return this.http.post('http://localhost:3000/user', body, {headers: headers})
+        return this.http.post('https://angular4-deployment2000.herokuapp.com/user', body, {headers: headers})
             .map((response: Response) => response.json())
             .catch((error: Response) => {
                 console.log('youp 2');
@@ -33,7 +33,7 @@ export class AuthService {
         const headers = new Headers({
             'Content-Type': 'application/json'
         })
-        return this.http.post('http://localhost:3000/user/signin', body, {headers: headers})
+        return this.http.post('https://angular4-deployment2000.herokuapp.com/user/signin', body, {headers: headers})
             .map((response: Response) => response.json())
             .catch((error: Response) => {
 
